@@ -8,10 +8,10 @@ $(function() {
   $("form#triangle").submit(function(event) {
     event.preventDefault();
 
-    var side1 = parseFloat($("#side1").val());
-    var side2 = parseFloat($("#side2").val());
-    var side3 = parseFloat($("#side3").val());
-    var triangle = new Triangle(side1, side2, side3);
+    let side1 = parseFloat($("#side1").val());
+    let side2 = parseFloat($("#side2").val());
+    let side3 = parseFloat($("#side3").val());
+    let triangle = new Triangle(side1, side2, side3);
     if (triangle.notTriangle()) {
       $("#type").text("This is not a triangle.");
     } else if (triangle.equalTriangle()) {
